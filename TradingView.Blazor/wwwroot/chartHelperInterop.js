@@ -123,13 +123,9 @@ export function loadChart(chartElement, chartRefId, chartType, mainSeriesData, v
             priceFormat: {
                 type: 'volume'
             },
-            priceScaleId: '',
-            // scaleMargins: {
-            //     top: 0.3,
-            //     bottom: 0,
-            // },
-            // lastValueVisible: false,
-            // priceLineVisible: false,
+            priceScaleId: '', // a blank scale id means this graph is scaled to the window size using the scaleMargins settings below
+            priceLineVisible: false,
+            lastValueVisible: true,
 
             // color: '#26a69a',
             // priceFormat: {
@@ -140,6 +136,7 @@ export function loadChart(chartElement, chartRefId, chartType, mainSeriesData, v
             // 	top: -0.25,
             // 	bottom: -1,
             // },
+            
             // ...chartOptions.customVolumeSeriesDefinitions
         });
 
