@@ -20,8 +20,7 @@
       <PackagePath></PackagePath>
     </None>
   </ItemGroup>
-
-
+    
   <ItemGroup>
     <SupportedPlatform Include="browser" />
   </ItemGroup>
@@ -30,7 +29,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.7" />
   </ItemGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(SolutionDir)' != '*Undefined*'">
-    <Exec Command="dotnet pack -p:PackageVersion=$([System.DateTime]::Now.ToString(&quot;yyyy.MM.dd.HHmm&quot;)) --no-build --configuration $(Configuration) --output &quot;$(SolutionDir)/nuget&quot;" />
-  </Target>
+<!--  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(SolutionDir)' != '*Undefined*'">-->
+<!--    <Exec Command="dotnet pack -p:PackageVersion=$([System.DateTime]::Now.ToString(&quot;yyyy.MM.dd.HHmm&quot;)) &#45;&#45;no-build &#45;&#45;configuration $(Configuration) &#45;&#45;output &quot;$(SolutionDir)/nuget&quot;" />-->
+<!--  </Target>-->
 </Project>

@@ -26,7 +26,7 @@ public class ChartHelperInterop : IAsyncDisposable
         await module.InvokeVoidAsync("loadChart", 
             eleRef, eleRef.Id, chartType, mainChartData, volumeData, markerData, options);
     }
-
+ 
     public async Task UpdateChart(ElementReference eleRef, ChartData data, ChartOptions options)
     {
         // Shape updated data using cached options
